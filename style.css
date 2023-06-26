@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.table-container {
+  width: 100%;
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.validation-error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#dataTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#dataTable th, #dataTable td {
+  padding: 8px;
+  text-align: left;
+}
+
+#dataTable th {
+  background-color: #f2f2f2;
+}
+
+#dataTable td {
+  border-bottom: 1px solid #ddd;
+}
+
+#dataTable td.actions {
+  white-space: nowrap;
+}
+
+.edit-button {
+  background-color: #2196F3;
+  color: #fff;
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.edit-button:hover, .delete-button:hover {
+  opacity: 0.8;
+}
+
+
+
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-buttons button {
+  margin-left: 5px;
+}
+
+
+
+
+.delete-button:hover {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+
+#cancelButton{
+  background-color:#f44336;
+}

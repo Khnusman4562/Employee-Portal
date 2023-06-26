@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+
+</head>
+<body>
+<!-- -----------------------------------container 1---------------------------------- -->
+  <h1>Employees Details</h1>
+  <div class="container">
+    <form id="myForm">
+      <div>
+        <label for="id">Employee ID:</label>
+        <input type="number" id="id" name="id" required>
+        <div class="validation-error" id="idError"></div>
+      </div>
+
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <div class="validation-error" id="nameError"></div>
+      </div>
+
+      <div>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+        <div class="validation-error" id="ageError"></div>
+      </div>
+
+      <div>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">Select</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+        <div class="validation-error" id="genderError"></div>
+      </div>
+
+      <div class="form-buttons">
+        <button type="button" id="addButton" onclick="storeData()">Add</button>
+        
+        <button type="button" id="cancelButton" onclick="cancelEdit()" style="display: none;">Cancel</button>
+      </div>
+
+    </form>
+  </div>
+<!-- ----------------------------------container 1 end ----------------------------------------- -->
+<!-- ----------------------------------container 2 ----------------------------------------- -->
+
+
+  <div class="table-container" id="tablePop">
+    <table id="dataTable">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Gender</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="dataBody">
+          </tbody>
+        </table>
+      </div>
+<!-- ----------------------------------container 2 end ----------------------------------------- -->
+<script src="script.js"></script>
+</body>
+</html>
